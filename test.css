@@ -11,7 +11,16 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #030c1c;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
   }
+  #welcome{
+    font: 300 3.5vw "neontubes", sans-serif;
+}
   .neon {
     width: 100%;
     height: auto;
@@ -180,4 +189,22 @@
      20.1%,100%{
       border-color:#2695ff;
     }
+  }
+
+  .left-text{
+      text-align: left;
+  }
+  .right-text{
+      text-align: right;
+  }
+
+  .price-item{
+      border: 2px solid #fff;
+     
+  }
+  .p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
