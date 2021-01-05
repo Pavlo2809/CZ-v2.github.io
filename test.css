@@ -17,13 +17,6 @@
     text-align: center;
 }
   .neon {
-    /* display: block;
-    position: absolute; */
-    /* top: 50%;
-    left: 30%; */
-    /* -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); */
-    /* width: 50vw; */
     width: 100%;
     height: auto;
     font-family: "neontubes";
@@ -123,7 +116,7 @@
   } */
 
 
-  .dowm_arrow {
+  /* .dowm_arrow {
     margin-top: 60px;
     padding: 0;
     display: flex;
@@ -191,4 +184,4 @@
      20.1%,100%{
       border-color:#08f;
     }
-  }
+  } */
