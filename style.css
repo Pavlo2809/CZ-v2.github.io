@@ -43,7 +43,6 @@ body {
     border-radius: 2rem; */
     text-transform: uppercase;
     animation: flicker_white 3.1s infinite alternate;    
-    -webkit-appearance: none;
   }
 
   
@@ -59,7 +58,6 @@ body {
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;     
-    -webkit-appearance: none;
 }
 
 h1:focus {
@@ -70,7 +68,6 @@ h1:focus {
 @keyframes flicker {
     
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-        -webkit-appearance: none;
 
         text-shadow:
             -0.2rem -0.2rem 1rem #fff,
@@ -80,8 +77,6 @@ h1:focus {
             0 0 6rem var(--neon-text-color),
             0 0 8rem var(--neon-text-color),
             0 0 10rem var(--neon-text-color);
-          -webkit-appearance: none;
-
         box-shadow:
             0 0 .5rem #fff,
             inset 0 0 .5rem #fff,
@@ -92,10 +87,35 @@ h1:focus {
     }
     
     20%, 24%, 55% {  
-          -webkit-appearance: none;
         text-shadow: none;
         box-shadow: none;
     }    
+}
+@-webkit-keyframes flicker {
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+    -webkit-text-shadow:
+          -0.2rem -0.2rem 1rem #fff,
+          0.2rem 0.2rem 1rem #fff,
+          0 0 2rem var(--neon-text-color),
+          0 0 4rem var(--neon-text-color),
+          0 0 6rem var(--neon-text-color),
+          0 0 8rem var(--neon-text-color),
+          0 0 10rem var(--neon-text-color);
+    -webkit-box-shadow:
+          0 0 .5rem #fff,
+          inset 0 0 .5rem #fff,
+          0 0 2rem var(--neon-border-color),
+          inset 0 0 2rem var(--neon-border-color),
+          0 0 4rem var(--neon-border-color),
+          inset 0 0 4rem var(--neon-border-color);        
+  }
+  
+  20%, 24%, 55% {  
+    -webkit-text-shadow: none;
+    -webkit-box-shadow: none;
+  }    
 }
 
 @keyframes flicker_white {
@@ -119,7 +139,23 @@ h1:focus {
         box-shadow: none;
     }    
 }
-
+@-webkit-keyframes flicker_white {
+    
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      -webkit-text-shadow:
+          -0.2rem -0.2rem 1rem #fff,
+          0.2rem 0.2rem 1rem #fff,
+          0 0 2rem var(--neon-white-text-color),
+          0 0 4rem var(--neon-white-text-color),
+          0 0 6rem var(--neon-white-text-color),
+          0 0 8rem var(--neon-white-text-color),
+          0 0 10rem var(--neon-white-text-color);
+  }
+  20%, 24%, 55% { 
+    -webkit-text-shadow: none;
+    -webkit-box-shadow: none;
+  }    
+}
 .dowm_arrow {
     margin-top: 60px;
     padding: 0;
@@ -175,8 +211,22 @@ h1:focus {
       border-color:#08f;
     }
   }
+  @-webkit-keyframes animate{
+    0%{
+      -webkit-border-color:#fff;
+      -webkit-transform:translate(0,0);
+    }
+     20%{
+      -webkit-border-color:#f40;
+      -webkit-transform:translate(15px,15px);
+    }
+     20.1%,100%{
+      -webkit-border-color:#08f;
+    }
+  }
 
 
+  
     @media only screen and (min-width: 768px){
         .welcome-text {
             font-size: 7.5rem;}
