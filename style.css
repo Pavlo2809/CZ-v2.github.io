@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
 
+@font-face {
+  font-family: 'neontubes';
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+  src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
     /* background-image: url(img/black-brick-wall-textured-background.jpg);
     -webkit-background-size: cover;
@@ -23,8 +30,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  font-family: 'Exo 2', sans-serif;
-  align-items: center;  
+    font-family: "neontubes";
+    align-items: center;  
   min-height: 100vh;
 }
 .center{
@@ -35,7 +42,6 @@ body {
 .neon_white {
     font-size: 12rem;
     font-weight: 100;
-    font-style: italic;
     color: #fff;
     padding: 4rem 6rem 5.5rem;
     /* border: 0.4rem solid #fff;
@@ -49,7 +55,6 @@ body {
 .neon_blue_red {
   font-size: 6rem;
   font-weight: 200;
-  font-style: italic;
   color: #fff;
   text-align: center;
   width:max-content;
