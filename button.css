@@ -20,6 +20,11 @@
           animation: pulse 1s;
   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
 }
+.pulse {
+    text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+    -webkit-animation: blink 4s infinite alternate;
+            animation: blink 4s infinite alternate;
+}
 
 @-webkit-keyframes pulse {
   0% {
@@ -66,7 +71,7 @@
 }
 
 .pulse {
-  --color: #ef6eae;
+  --color: #ff003c;
   --hover: #ef8f6e;
 }
 
@@ -107,7 +112,7 @@ button:hover, button:focus {
 body {
   color: #fff;
   background: #17181c;
-  font: 300 1em "Fira Sans", sans-serif;
+  font: 300 3vw "neontubes", sans-serif;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -119,14 +124,15 @@ body {
 button {
   background: none;
   border: 2px solid;
-  font: inherit;
+  font-family: "neontubes";
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 2em;
+  padding: 1em 3em;
 }
 
 h1 {
   font-weight: 400;
+  
 }
 
 code {
