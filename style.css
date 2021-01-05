@@ -79,11 +79,11 @@ h1:focus {
           0 0 10rem var(--neon-text-color);
     -webkit-box-shadow:
           0 0 .5rem #fff,
-          inset 0 0 .5rem #fff,
+          -webkit-inset 0 0 .5rem #fff,
           0 0 2rem var(--neon-border-color),
-          inset 0 0 2rem var(--neon-border-color),
+          -webkit-inset 0 0 2rem var(--neon-border-color),
           0 0 4rem var(--neon-border-color),
-          inset 0 0 4rem var(--neon-border-color);        
+          -webkit-inset 0 0 4rem var(--neon-border-color);        
   }
   
   20%, 24%, 55% {  
